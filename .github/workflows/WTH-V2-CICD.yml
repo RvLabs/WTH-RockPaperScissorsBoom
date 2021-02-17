@@ -74,7 +74,7 @@ jobs:
       runs-on: ubuntu-latest
       needs: [build]
       env:
-        imageName: ${{ needs.Build-Image.outputs.image }}     #This is the output variable from the build job
+        imageName: ${{ needs.build.outputs.image }}     #This is the output variable from the build job
         webApp: 'wth-rpsb-v2-app-4595'
         registry: ${{ secrets.ACR_SERVER }}
         ghOrgName: '<GITHUB-ORG-NAME>'
