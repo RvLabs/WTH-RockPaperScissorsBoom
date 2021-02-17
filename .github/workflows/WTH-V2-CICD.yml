@@ -27,7 +27,7 @@ jobs:
       acrUname: ${{ secrets.ACR_UNAME }}
       acrPassword: ${{ secrets.ACR_PASSWORD }}
       ghOrgName: '<GITHUB-ORG-NAME>'
-      imageName: 'rockpaperscisors-server'
+      imageName: 'wth-rpsb-server-v2'
       imageDockerFile: 'Dockerfile-Server'
 
 
